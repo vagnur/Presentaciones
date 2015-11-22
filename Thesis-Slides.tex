@@ -1,0 +1,129 @@
+\documentclass{beamer}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb,latexsym}
+\usepackage{amstext}
+\usepackage{amsthm}
+\usepackage{marvosym}
+\usepackage{mathcomp}
+\usepackage{setspace}
+\usepackage{stmaryrd}
+\usepackage{textcomp}
+\usepackage{units}
+\usepackage{upgreek}
+\usepackage{multicol}
+\usepackage[utf8]{inputenc}
+\usepackage{textpos}
+\usepackage[compatibility=false]{caption}
+\usepackage{booktabs}
+
+\usepackage[ruled,linesnumbered]{algorithm2e}
+\RequirePackage{algorithmic}
+
+\usetheme{Madrid}
+ 
+\renewcommand{\figurename}{Fig.}
+\setbeamertemplate{caption}[numbered]
+
+\definecolor{UniBlue}{RGB}{0,82,204}
+\setbeamercolor{title}{fg=white}
+\setbeamercolor{frametitle}{fg=white}
+\setbeamercolor{structure}{fg=UniBlue}
+
+\newcommand{\backupbegin}{
+	\newcounter{finalframe}
+	\setcounter{finalframe}{\value{framenumber}}
+}
+\newcommand{\backupend}{
+	\setcounter{framenumber}{\value{finalframe}}
+}
+
+\setbeamerfont{caption}{size=\small}
+\setbeamertemplate{section in toc}{
+  {\color{gray}\inserttocsectionnumber.}~\inserttocsection}
+ 
+ 
+\setbeamercolor{subsection in toc}{bg=white,fg=structure}
+\setbeamerfont{subsection in toc}{size=\footnotesize}
+\setbeamertemplate{subsection in toc}{
+        \hspace{1.2em}
+        {\color{orange}{$\blacktriangleright$}}
+        ~\inserttocsubsection\par}
+ 
+\setbeamertemplate{subsubsection in toc}{
+        \leavevmode\hspace{3.5em}
+        {\color{orange}\rule[0.3ex]{3pt}{3pt}}
+        ~\inserttocsubsubsection\par}
+        
+        
+\setbeamertemplate{itemize item}{\color{orange}$\bullet$}
+\setbeamertemplate{itemize subitem}{\color{orange}$\bullet$}
+\setbeamertemplate{itemize subsubitem}{\color{orange}$\bullet$}
+  
+\setbeamerfont{caption}{size=\scriptsize}
+
+\setbeamercolor{block title alerted}{bg=orange,fg=white}
+
+
+\title{Titulo}
+
+\subtitle{Subtitulo}
+
+\author[Autor]{Autor}
+
+\institute[UdeSantiago]
+{
+  Departamento de Ingenier\'ia Inform\'atica\\
+  Universidad de Santiago de Chile
+ }
+
+\addtobeamertemplate{frametitle}{}{
+    \begin{textblock*}{100mm}(0.93\textwidth,-1.2cm)
+   \includegraphics[scale=0.022]{images/LogoUsach.png}
+    \end{textblock*}
+}
+
+\date[Santiago, 2015]{\scriptsize{Santiago - Chile\\2015}}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}[t]{Contenidos}{\textcolor{UniBlue}{.}}
+%	\begin{multicols}{2}
+	\tableofcontents
+%	\end{multicols}
+\end{frame}
+
+\section{Introducción}
+
+\subsection*{Sub}
+
+\begin{frame}{Introducción}{Sub}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed consectetur quam. Suspendisse sit amet nulla commodo, lobortis ipsum vel, commodo ipsum. Etiam venenatis congue sapien dignissim pellentesque. Proin euismod, mi et eleifend venenatis, arcu neque commodo arcu, vel accumsan ante erat eget urna. Fusce eget pulvinar velit. Vivamus sapien metus, cursus nec nibh non, ornare aliquam enim. Nulla quis enim ac eros mollis lobortis. Vestibulum suscipit velit et nisi blandit, sed aliquam felis porttitor. Nam fermentum tellus sed ligula consectetur, non eleifend dolor commodo. Curabitur aliquet finibus neque non porta. 
+\end{frame}
+
+\section{Desarrollo}
+
+\subsection*{Sub}
+\begin{frame}{Desarrollo}{Sub}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed consectetur quam. Suspendisse sit amet nulla commodo, lobortis ipsum vel, commodo ipsum. Etiam venenatis congue sapien dignissim pellentesque. Proin euismod, mi et eleifend venenatis, arcu neque commodo arcu, vel accumsan ante erat eget urna. Fusce eget pulvinar velit. Vivamus sapien metus, cursus nec nibh non, ornare aliquam enim. Nulla quis enim ac eros mollis lobortis. Vestibulum suscipit velit et nisi blandit, sed aliquam felis porttitor. Nam fermentum tellus sed ligula consectetur, non eleifend dolor commodo. Curabitur aliquet finibus neque non porta. 
+\end{frame}
+
+\section{Conclusiones}
+
+\begin{frame}{Conclusiones}{Conclusiones}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed consectetur quam. Suspendisse sit amet nulla commodo, lobortis ipsum vel, commodo ipsum. Etiam venenatis congue sapien dignissim pellentesque. Proin euismod, mi et eleifend venenatis, arcu neque commodo arcu, vel accumsan ante erat eget urna. Fusce eget pulvinar velit. Vivamus sapien metus, cursus nec nibh non, ornare aliquam enim. Nulla quis enim ac eros mollis lobortis. Vestibulum suscipit velit et nisi blandit, sed aliquam felis porttitor. Nam fermentum tellus sed ligula consectetur, non eleifend dolor commodo. Curabitur aliquet finibus neque non porta. 
+\end{frame}
+
+\begin{frame}{Preguntas}{\textcolor{UniBlue}{.}}
+\begin{figure}
+  \center
+    \includegraphics[scale=0.25]{images/Questions.pdf}
+\end{figure}
+\end{frame}
+
+\end{document}
